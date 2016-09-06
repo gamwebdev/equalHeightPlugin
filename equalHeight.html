@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title></title>
+    <link rel="stylesheet" type="text/css" href="equalHeight.css">
+	<script type="text/javascript" src="jquery-3.0.0.min.js"></script>
+	<script type="text/javascript" src="jquery-ui.min.js"></script>
+	<script type="text/javascript" src="equalHeight.js"></script>
+	
+<style type="text/css">
+
+</style>
+</head>
+<body>
+
+<h1>Variable heights</h1>
+<div class="container">
+<div class="column">
+The shortest box
+</div>
+<div class="column">
+A much bigger box is now coming.<br />Beware!
+</div>
+<div class="column">
+Believe it or not, this box is actually not shorter than the
+previous one. In fact, it's a bit taller.
+</div>
+<div class="column">
+And we've finally got to the last box, which holds the
+record for the tallest box of this page!<br />
+Unfortunately, other shorter boxes will eventually grow
+to this very same height.
+</div>
+</div>
+<br style="clear: left;">
+<h1>Equal heights</h1>
+<div class="container equal">
+<div class="column">
+The shortest box
+</div>
+<div class="column">
+A much bigger box is now coming.<br />Beware!
+</div>
+<div class="column">
+Believe it or not, this box is actually not shorter than the
+previous one. In fact, it's a bit taller.
+</div>
+<div class="column">
+And we've finally got to the last box, which holds the
+record for the tallest box of this page!<br />
+Unfortunately, other shorter boxes will eventually grow
+to this very same height.
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+$('document').ready(function(){
+	$('.equal').equalHeight();
+});
+</script>
+</body>
+
+
+</html>
